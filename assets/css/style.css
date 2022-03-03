@@ -59,6 +59,11 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--charcoal);
+    background-color: orange;
+}
+
 /* Classes */
 
 .centered-box {
@@ -187,9 +192,22 @@ a {
 .social-media-box {
     display: flex;
     flex-wrap: wrap;
-    height: 80%;
-    width: 100%;
-    background-color: var(--turq);
+    position: relative;
+    width: 50%;
+    height: 625px;
+    margin: 0px 0px 0px 25%;
+    font-size: 30px;
+    color: var(--white);
+}
+
+.icon-box {
+    height: 50%;
+    width: 50%;
+}
+
+.icon-size {
+    height: 90%;
+    width: 90%;
 }
 
 /* ID's for general use */
@@ -244,22 +262,120 @@ a {
     background-repeat: no-repeat;
 }
 
-
-#connect {
-    display: flex;
-    background-image: url("../images/Mattadin.jpg");
+#linkedin {
+    background-image: url("../images/linkedin-image.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
+#gmail {
+
+    background-image: url("../images/gmail-image.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#blue-text {
+    color: var(--dark);
+    font-style: italic;
+}
+
 /* Media Selectors for Tablet */
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 913px) {
 
+    .content-box {
+        flex-direction: column;
+        width: 75%;
+        height: 1000px;
+        margin: 10% 15%;
+        font-size: 30px;
+    }
+
+
+    .image-box {
+        height: 100%;
+        width: 100%;
+     }
+
+     .portfolio-box {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 1250px;
+        margin: 0px 0px;
+    }
+
+    .extra-portfolio-box {
+        position: unset;
+        width: 100%;
+        height: 3250px;
+        margin: 0px 0px;
+        font-size: 30px;
+    }
+
+    .extra-images-column {
+        flex-direction: column-reverse;
+        height: 1100px;
+        width: 50%;
+        flex: 1 1 100%;
+        padding: 2%;
+    }
+    
+}
 
 /* Media Selectors for Mobile */
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+
+    .content-box {
+        flex-direction: column;
+        width: 50%;
+        height: 1150px;
+        margin: 10% 25% 0px 25%;
+        font-size: 20px;
+
+    }
+
+    .image-box {
+       width: 100%;
+    }
+
+    .portfolio-box {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 950px;
+        margin: 0px 0px;
+        font-size: 20px;
+    }
+
+    .main-image-text {
+        margin: 0% 10%;
+        flex: 1 1 50%;
+    }
+
+    .extra-portfolio-box {
+        position: unset;
+        width: 100%;
+        height: 2100px;
+        margin: 0px 0px;
+        font-size: 20px;
+    }
+    
+    .extra-images-column {
+        flex-direction: column-reverse;
+        height: 700px;
+        width: 50%;
+        flex: 1 1 100%;
+        padding: 2%;
+    }
+
+    .icon-box {
+        margin-top: 20%;
+        height: 100%;
+        width: 100%;
+    }
+    
 
 }
