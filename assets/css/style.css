@@ -24,9 +24,10 @@ header {
     display: flex;
     position: relative;
     justify-content: center;
+    align-items: center;
     background-position: center;
     width: 100%;
-    height: 1000px;
+    height: 500px;
 }
 
 h1 {
@@ -46,8 +47,8 @@ h2 {
 }
 
 h3 {
-    margin: 15% 0px;
-    text-align: center;
+    margin: 5% 0px;
+    text-align: left;
 }
 
 header p {
@@ -73,11 +74,12 @@ a:hover {
 }
 
 .banner-image {
+    display: flex;
         position: relative;
         background-image: url("../images/erlenmeyer.jpg");
         background-position: center;
         width: 100%;
-        height: 1000px;
+        height: 500px;
         z-index: 1;
         background-size: cover;
 }
@@ -104,9 +106,9 @@ a:hover {
     flex-wrap: wrap;
     position: relative;
     width: 50%;
-    height: 625px;
-    margin: 0px 0px 0px 25%;
+    margin: 20px 0px 20px 25%;
     font-size: 30px;
+    background-color: var(--charcoal);
     color: var(--white);
 }
 
@@ -122,9 +124,18 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    width: 50%;
+    margin: 0px 0px 0px 25% ;
+    font-size: 30px;
+    color: var(--charcoal);
+    background-color: #E5E5E5;
+}
+
+.portfolio-box-bg {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
     width: 100%;
-    height: 625px;
-    margin: 0px 0px;
     font-size: 30px;
     color: var(--charcoal);
     background-color: #E5E5E5;
@@ -135,9 +146,8 @@ a:hover {
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
-    width: 100%;
-    height: 1250px;
-    margin: 0px 0px;
+    width: 50%;
+    margin: 0px 0px 0px 25%;
     font-size: 30px;
     color: var(--charcoal);
     background-color: #E5E5E5;
@@ -148,37 +158,35 @@ a:hover {
     flex-wrap: wrap;
     flex-direction: column;
     background-position: center;
-    height: 80%;
     width: 80%;
     flex: 1 1 33%;
     padding: 2%;
 }
 
 .main-image-box {
-    margin: 0px 0px;
-    flex: 1 1 50%;
+    margin: 5% 5%;
+    flex: 1 1 35%;
 }
 
 .main-image-text {
-    margin: 0% 0% 0% 0%;
-    flex: 1 1 50%;
+    margin: 5% 0% 0% 0%;
+    flex: 1 1 25%;
 }
 
 .extra-images-box {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 33%;
 }
 
 .extra-images-text {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
-    height: 25%;
-    margin: 0% 20%;
+    flex-direction: column;
+    width: 100%;
+    margin: 0% 0%;
 }
 
-.bottom-text {
+.nav-text {
     background-color: var(--dark);
     display: flex;
     position: absolute;
@@ -201,8 +209,8 @@ a:hover {
 }
 
 .icon-box {
-    height: 50%;
-    width: 50%;
+    height: 45%;
+    width: 45%;
 }
 
 .icon-size {
@@ -219,31 +227,6 @@ a:hover {
     #6497b1 60%,
     #005b96 80%,
     #b3cde0 100%);
-}
-
-#about-me {
-    display: flex;
-    background-image: url("../images/Mattadin.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-}
-
-#portfolio {
-    display: flex;
-    background-image: url("../images/portfolio-image-1.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#portfolio-image-2 {
-    display: flex;
-    background-size: contain;
-    background-position: center;
-    background-image: url("../images/portfolio-image-2.png");
-    background-repeat: no-repeat;
 }
 
 #portfolio-image-3 {
@@ -282,100 +265,111 @@ a:hover {
     font-style: italic;
 }
 
-/* Media Selectors for Tablet */
+ /* Media Selectors for Tablet */
 
-@media screen and (max-width: 913px) {
+ @media screen and (max-width: 913px) {
+    * {
+        font-size: 25px;
+    } 
+
+    .nav-text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner-image {
+        height: 350px;
+    }
 
     .content-box {
-        flex-direction: column;
-        width: 75%;
-        height: 1000px;
-        margin: 10% 15%;
-        font-size: 30px;
+        width: 80%;
+        margin: 5% 0 10% 5%;
     }
 
-
-    .image-box {
-        height: 100%;
+    .text-box {
         width: 100%;
-     }
-
-     .portfolio-box {
-        flex-direction: column-reverse;
-        width: 100%;
-        height: 1250px;
-        margin: 0px 0px;
-    }
-
-    .extra-portfolio-box {
-        position: unset;
-        width: 100%;
-        height: 3250px;
-        margin: 0px 0px;
-        font-size: 30px;
-    }
-
-    .extra-images-column {
-        flex-direction: column-reverse;
-        height: 1100px;
-        width: 50%;
         flex: 1 1 100%;
-        padding: 2%;
-    }
-    
-}
-
-/* Media Selectors for Mobile */
-
-@media screen and (max-width: 767px) {
-
-    .content-box {
-        flex-direction: column;
-        width: 50%;
-        height: 1150px;
-        margin: 10% 25% 0px 25%;
-        font-size: 20px;
-
-    }
-
-    .image-box {
-       width: 100%;
+        margin: 5%;
     }
 
     .portfolio-box {
-        flex-direction: column-reverse;
         width: 100%;
-        height: 950px;
-        margin: 0px 0px;
-        font-size: 20px;
+        margin: 5% 5%;
     }
 
-    .main-image-text {
-        margin: 0% 10%;
-        flex: 1 1 50%;
+    .main-image-box {
+        width: 100%;
+        flex: 1 1 100%;
     }
 
     .extra-portfolio-box {
-        position: unset;
         width: 100%;
-        height: 2100px;
-        margin: 0px 0px;
-        font-size: 20px;
+        margin: 5% 5%;
     }
     
     .extra-images-column {
-        flex-direction: column-reverse;
-        height: 700px;
-        width: 50%;
         flex: 1 1 100%;
-        padding: 2%;
+    }
+
+    .extra-images-text {
+        margin: 8% 0;
     }
 
     .icon-box {
-        margin-top: 20%;
-        height: 100%;
+        margin: 0 5%;
+    }
+
+}
+
+ /*Media Selectors for Mobile */
+
+@media screen and (max-width: 767px) {
+
+    * {
+        font-size: 20px;
+    } 
+
+    .nav-text {
+        text-align: center;
         width: 100%;
     }
+
+    .banner-image {
+        height: 350px;
+    }
+
+    .content-box {
+        width: 80%;
+        margin: 5% 0 10% 5%;
+    }
+
+    .text-box {
+        width: 100%;
+        flex: 1 1 100%;
+        margin-bottom: 5%;
+    }
+
+    .portfolio-box {
+        width: 100%;
+        margin: 5% 5%;
+    }
+
+    .main-image-box {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .extra-portfolio-box {
+        width: 100%;
+        margin: 5% 5%;
+    }
     
+    .extra-images-column {
+        flex: 1 1 100%;
+    }
+
+    .icon-box {
+        margin: 0 5%;
+    }
 
 }
