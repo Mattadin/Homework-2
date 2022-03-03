@@ -1,17 +1,30 @@
-# Homework-2
+# Portfolio Compilation- Matthew Fernandez
 
-## This is a website for Homework Assignment 2
+## The Project
 
-For this website, I've gone for a layout that draws inspiration from several corporate websites
-keeping to a more minimalist approach with simple color palettes to draw attention to the content
-and increase compatibity for various screen brightness and saturation capabilities.
+This project will serve as my future skeleton for adding portfolio worthy projects completed throughout my experience at Bootcamp and ultimately provide a great place to showcase my skills and abilities to future projects. This project has afforded me a great opportunity to hone and utilize my initial two weeks of html and css languages- mixing them together to form a cohesive and stylistic website to demonstrate my clean scientific style.
+
+## Usage
+
+The various portions of this website provide an excellent skeleton for flex boxes to meet responsive design requirements for mobile and tablet while keeping content contained neatly within their respective fields with zero overflow.
+
 
 ![screenshot](./assets/images/portfolio-demo.PNG)
 
-## The code
+## Credits
 
-Within the code, two primary media-selectors are used to provide compatibility for most tablets
-and mobile phones via difference in sizing and formatting of the many flexboxes present to provide
-a more coherent user experience for any prospective clients who may be interested.
+Images for Linkedin and Gmail taken from linkedin.com and gmail.com respectively.
 
-Within you will find notes detailing which sections affect which part of the code for ease-of-refactor or any additional features that need to be added.
+Brilliant overlay tutorial found here https://www.youtube.com/watch?v=SXQ9l0ScDEA.
+
+## License
+
+The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+
+## Features
+
+**Flex-box design targeting most mobile phones and tablet parameters.**
+**Overlay to help darken overly-bright images.**
+**Blue colour palette for additional complimentary colours for those seeking a more varied style without clashing.**
+**Hover options that can easily be given borders or animations, cursor decorations etc to meet client needs/demands or even your own stylistic choice!**
+**The golden resource of any project, "BOXES WITHIN BOXES". Thats right, save yourself the headache and use my very own babushka boxes and either add your own, flex them in different directions, or add more (at your own peril)**
