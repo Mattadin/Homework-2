@@ -27,7 +27,6 @@ header {
     align-items: center;
     background-position: center;
     width: 100%;
-    height: 500px;
 }
 
 h1 {
@@ -253,7 +252,6 @@ a:hover {
 }
 
 #gmail {
-
     background-image: url("../images/gmail-image.png");
     background-position: center;
     background-size: contain;
